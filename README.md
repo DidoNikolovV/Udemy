@@ -9,7 +9,6 @@
       <li>Section 5: Scarlett Portfolio Website -- CSS Flexbox (Advanced-level)</li>
       <li>Section 6: Master The CSS Grid Properties & Concepts (Advanced-level)</li>
       <li>Section 7: Vision Luxury Villas Website -- CSS Grid (Advanced-level)</li>
-
     </ul>
   </li>
 </ol>
