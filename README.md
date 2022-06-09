@@ -1,4 +1,6 @@
-The Modern Flexbox, Grid, Sass & Animations Course covers everything you need for Flexbox, Grid, Sass and Animations.
+This repo holds udemy courses I have completed
+
+1. The Modern Flexbox, Grid, Sass & Animations Course covers everything you need for Flexbox, Grid, Sass and Animations.
 
 <ul>
   <li>Section 2: Master The CSS Flexbox Properties & Concepts (Intermediate-level)</li>
