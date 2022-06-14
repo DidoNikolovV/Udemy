@@ -1,0 +1,19 @@
+header {
+    background-color: rgb(227, 232, 238);
+    padding: 5vh 5vw;
+
+    /****** Top Border ******/
+    /* border-top: 5px solid lightslategray; */
+
+    /* Making the border responsive => vw = [(Pixel value / Viewport Width) * 100] */
+    /* border-top: 0.3333vw solid lightslategray; */
+
+    /* Taking it one step further => to make sure it does not get very small on mobile devices */
+    border-top: calc(2px + 0.186vw) solid lightslategray;
+}
+
+a {
+    text-decoration: none;
+    color: #444;
+    margin: 0 2vw;
+}
