@@ -23,7 +23,7 @@
     --secondary-color-m: #ff94088e;
 
     /* tertiary color */
-    --tertiary-color: #01727498;
+    --tertiary-color: #017274bb;
 
      /* tertiary color Modified*/
      --tertiary-color-m: #01727498;
@@ -651,8 +651,26 @@ section#testimonials {
     position: absolute;
     top: 60%;
     left: 0;
+    width: 80%;
+    background-color: var(--tertiary-color-m);
+    padding: 1.5rem;
+
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.35s ease-in-out;
 }
 
+.testimonials__card:hover .testimonials__card--content,
+.testimonials__card:active .testimonials__card--content  {
+    transform: scaleY(1);
+    transform-origin: center;
+}
+
+.testimonials__card:hover .testimonials__card--img img,
+.testimonials__card:active .testimonials__card--img img{
+    transform: scale(0.98);
+    filter: grayscale(50%);
+}
 
 /*-*-*-*-*-*-*-*-*-*-*-* (max-width:1510px) Mark *-*-*-*-*-*-*-*-*-*-*-*/
 @media screen and (min-width: 1510px) {
@@ -778,6 +796,8 @@ section#testimonials {
 
      /*-*-*-*-*-*-*-*-*-*-*-* Services Section *-*-*-*-*-*-*-*-*-*-*-*/
      /*-*-*-*-*-*-*-*-*-*-*-* Skills Section *-*-*-*-*-*-*-*-*-*-*-*/
+    /*-*-*-*-*-*-*-*-*-*-*-* Testimonials Section *-*-*-*-*-*-*-*-*-*-*-*/
+
 
      section#services {
         padding: 6rem 3rem 2rem;
@@ -790,7 +810,9 @@ section#testimonials {
 
      .services--title,
      .skills__design--title,
-     .skills__coding--title {
+     .skills__coding--title,
+     .testimonials__card--content__title,
+     .testimonials__card--para {
         font-size: calc(1.2rem + 2vw);
      }
 
@@ -799,9 +821,27 @@ section#testimonials {
      .skills__coding h4 {
         font-size: calc(0.8rem + 1.5vw);
      }
+}
 
+/*-*-*-*-*-*-*-*-*-*-*-* (max-width:460px) Mark *-*-*-*-*-*-*-*-*-*-*-*/
+@media screen and (max-width: 460px) {
+    /*-*-*-*-*-*-*-*-*-*-*-* Testimonials Section *-*-*-*-*-*-*-*-*-*-*-*/
+    .testimonials__card--content {
+        top: 0;
+        height: 100%;
+        width: 100%;
+        transform: scaleY(0);
+        transform-origin: bottom;
 
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
 
+    .testimonials__card:hover .testimonials__card--content,
+    .testimonials__card:active .testimonials__card--content {
+        transform-origin: bottom;
+    }
 }
 
 
